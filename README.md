@@ -79,6 +79,8 @@ See `COMMERCIAL_LICENSE.md` for details.
 Bookless is under active development.  
 APIs and features may evolve until the first stable release.
 
+**Project roadmap**: See the [Issues Guide](ISSUES_GUIDE.md) for a comprehensive list of planned features and how to contribute.
+
 ---
 
 ## 🤝 Contributing
