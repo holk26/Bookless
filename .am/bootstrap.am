@@ -1,0 +1,7 @@
+task: bootstrap-project
+rules:
+  - single_task_only
+steps:
+  - create_project_structure
+  - initialize_git
+  - add_license

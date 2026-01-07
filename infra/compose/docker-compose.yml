@@ -1,0 +1,11 @@
+services:
+  api:
+    build:
+      context: ../..
+      dockerfile: infra/docker/Dockerfile
+    env_file:
+      - ../../.env
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.bookless.rule=Host(`api.bookless.app.mapletech.tech`)"
+      - "traefik.http.services.bookless.loadbalancer.server.port=8000"
