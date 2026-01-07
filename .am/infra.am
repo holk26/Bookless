@@ -1,0 +1,7 @@
+task: setup-infra
+depends_on: setup-backend
+rules:
+  - arm_only
+steps:
+  - create_dockerfile
+  - configure_traefik

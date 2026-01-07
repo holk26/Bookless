@@ -1,0 +1,8 @@
+task: setup-backend
+depends_on: bootstrap-project
+rules:
+  - no_business_logic
+steps:
+  - setup_fastapi
+  - setup_database_modes
+  - add_healthcheck
