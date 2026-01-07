@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from sqlalchemy.exc import IntegrityError
+from uuid import UUID
 
 from app.db.session import SessionLocal
 from app.db.models.tenant import Tenant
@@ -12,7 +13,7 @@ class TenantCreate(BaseModel):
     slug: str
 
 class TenantResponse(BaseModel):
-    id: str
+    id: UUID
     name: str
     slug: str
     is_active: bool
